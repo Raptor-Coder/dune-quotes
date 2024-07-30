@@ -211,3 +211,41 @@
                 text: "Do not be trapped by the need to achieve anything. This way, you achieve everything.",
                 author: "Frank Herbert, Dune"
             }
+{
+    text: "I must not fear. Fear is the mind-killer.",
+    author: "Bene Gesserit Litany Against Fear, Dune"
+},
+{
+    text: "Plans within plans within plans.",
+    author: "Frank Herbert, Dune"
+},
+{
+    text: "The desert's a big place, big enough for a race to lose itself.",
+    author: "Frank Herbert, Dune"
+},
+{
+    text: "There is no real ending. It’s just the place where you stop the story.",
+    author: "Frank Herbert, Dune"
+},
+{
+    text: "A beginning is a time for taking the most delicate care that the balances are correct.",
+    author: "Frank Herbert, Dune"
+},
+{
+    text: "A world is supported by four things: the learning of the wise, the justice of the great, the prayers of the righteous, and the valor of the brave. But all of these are as nothing without a ruler who knows the art of ruling.",
+    author: "Frank Herbert, Dune"
+}
+
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const quote = quotes[randomIndex];
+            document.getElementById('quote').textContent = `"${quote.text}"`;
+            document.getElementById('author').textContent = `- ${quote.author}`;
+        }
+
+        // Generate a quote when the page loads
+        generateQuote();
+    </script>
+</body></html>
