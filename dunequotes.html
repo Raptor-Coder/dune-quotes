@@ -23,3 +23,28 @@
         color: #5d4037;
         margin-bottom: 20px;
     }
+ #author {
+        font-style: italic;
+        color: #8d6e63;
+    }
+    button {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #f57c00;
+    }
+</style>
+</head>
+<body>
+    <div class="quote-container">
+        <p id="quote"></p>
+        <p id="author"></p>
+        <button onclick="generateQuote()">New Quote</button>
+    </div>
